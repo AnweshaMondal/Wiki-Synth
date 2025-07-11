@@ -1,0 +1,87 @@
+version: '3.8'
+
+services:
+  # Wikipedia Summary API
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - MONGO_URI=mongodb://mongodb:27017/wikipedia-summary
+      - REDIS_URL=redis://redis:6379
+      - JWT_SECRET=${JWT_SECRET}
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - ADMIN_EMAIL=${ADMIN_EMAIL:-admin@example.com}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123}
+    depends_on:
+      - mongodb
+      - redis
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  # MongoDB Database
+  mongodb:
+    image: mongo:6-alpine
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=wikipedia-summary
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_USERNAME:-admin}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_PASSWORD:-password}
+    volumes:
+      - mongodb_data:/data/db
+      - ./scripts/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  # Redis Cache (Optional)
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-}
+    volumes:
+      - redis_data:/data
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  # MongoDB Express (Optional - for database management)
+  mongo-express:
+    image: mongo-express:latest
+    ports:
+      - "8081:8081"
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+      - ME_CONFIG_MONGODB_PORT=27017
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGO_USERNAME:-admin}
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGO_PASSWORD:-password}
+      - ME_CONFIG_BASICAUTH_USERNAME=${MONGOEXPRESS_USERNAME:-admin}
+      - ME_CONFIG_BASICAUTH_PASSWORD=${MONGOEXPRESS_PASSWORD:-pass}
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+    restart: unless-stopped
+    profiles:
+      - tools
+
+volumes:
+  mongodb_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge
+
+# Development override
+# Create docker-compose.override.yml for local development
+# with volume mounts for hot reloading
