@@ -1,0 +1,2465 @@
+{
+  message: '🚀 Server running on port 3000 in development mode',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:53:15'
+}
+{
+  message: '📊 API Documentation: http://localhost:3000/api',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:53:15'
+}
+{
+  message: '💚 Health Check: http://localhost:3000/health',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:53:15'
+}
+{
+  message: 'SIGTERM signal received, shutting down gracefully',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:53:18'
+}
+{
+  message: '🚀 Server running on port 3000 in development mode',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:53:19'
+}
+{
+  message: '📊 API Documentation: http://localhost:3000/api',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:53:19'
+}
+{
+  message: '💚 Health Check: http://localhost:3000/health',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:53:19'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:53:23 +0000] "GET /health HTTP/1.1" 200 92 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:53:23'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:21:53:49 +0000] "GET /health HTTP/1.1" 200 94 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:53:49'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:53:54 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:53:54'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:21:53:57 +0000] "GET /api HTTP/1.1" 200 659 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:53:57'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:54:24 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:54:24'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:54:54 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:54:54'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:55:24 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:55:24'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:55:54 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:55:54'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:56:24 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:56:24'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:56:54 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:56:54'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:21:57:00 +0000] "POST /api/auth/register HTTP/1.1" 400 292 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:57:00'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  email: 'test@example.com',
+  error: 'Command find requires authentication',
+  stack: 'MongoServerError: Command find requires authentication\n' +
+    '    at Connection.sendCommand (/app/node_modules/mongodb/lib/cmap/connection.js:305:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Connection.command (/app/node_modules/mongodb/lib/cmap/connection.js:333:26)\n' +
+    '    at async Server.command (/app/node_modules/mongodb/lib/sdam/server.js:171:29)\n' +
+    '    at async FindOperation.execute (/app/node_modules/mongodb/lib/operations/find.js:36:16)\n' +
+    '    at async tryOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:207:20)\n' +
+    '    at async executeOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:75:16)\n' +
+    '    at async FindCursor._initialize (/app/node_modules/mongodb/lib/cursor/find_cursor.js:61:26)\n' +
+    '    at async FindCursor.cursorInit (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:633:27)\n' +
+    '    at async FindCursor.fetchBatch (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:667:13)',
+  level: 'error',
+  message: 'Registration failed:',
+  timestamp: '2025-07-17 21:57:10'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Command find requires authentication',
+  stack: 'MongoServerError: Command find requires authentication\n' +
+    '    at Connection.sendCommand (/app/node_modules/mongodb/lib/cmap/connection.js:305:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Connection.command (/app/node_modules/mongodb/lib/cmap/connection.js:333:26)\n' +
+    '    at async Server.command (/app/node_modules/mongodb/lib/sdam/server.js:171:29)\n' +
+    '    at async FindOperation.execute (/app/node_modules/mongodb/lib/operations/find.js:36:16)\n' +
+    '    at async tryOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:207:20)\n' +
+    '    at async executeOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:75:16)\n' +
+    '    at async FindCursor._initialize (/app/node_modules/mongodb/lib/cursor/find_cursor.js:61:26)\n' +
+    '    at async FindCursor.cursorInit (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:633:27)\n' +
+    '    at async FindCursor.fetchBatch (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:667:13)',
+  url: '/api/auth/register',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 21:57:10'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:21:57:10 +0000] "POST /api/auth/register HTTP/1.1" 500 1099 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:57:10'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:57:24 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:57:24'
+}
+{
+  message: 'SIGTERM signal received, shutting down gracefully',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:57:44'
+}
+{
+  message: '🚀 Server running on port 3000 in development mode',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:57:45'
+}
+{
+  message: '📊 API Documentation: http://localhost:3000/api',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:57:45'
+}
+{
+  message: '💚 Health Check: http://localhost:3000/health',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:57:45'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:57:49 +0000] "GET /health HTTP/1.1" 200 93 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:57:49'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  email: 'test@example.com',
+  error: 'Command find requires authentication',
+  stack: 'MongoServerError: Command find requires authentication\n' +
+    '    at Connection.sendCommand (/app/node_modules/mongodb/lib/cmap/connection.js:305:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Connection.command (/app/node_modules/mongodb/lib/cmap/connection.js:333:26)\n' +
+    '    at async Server.command (/app/node_modules/mongodb/lib/sdam/server.js:171:29)\n' +
+    '    at async FindOperation.execute (/app/node_modules/mongodb/lib/operations/find.js:36:16)\n' +
+    '    at async tryOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:207:20)\n' +
+    '    at async executeOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:75:16)\n' +
+    '    at async FindCursor._initialize (/app/node_modules/mongodb/lib/cursor/find_cursor.js:61:26)\n' +
+    '    at async FindCursor.cursorInit (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:633:27)\n' +
+    '    at async FindCursor.fetchBatch (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:667:13)',
+  level: 'error',
+  message: 'Registration failed:',
+  timestamp: '2025-07-17 21:58:07'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Command find requires authentication',
+  stack: 'MongoServerError: Command find requires authentication\n' +
+    '    at Connection.sendCommand (/app/node_modules/mongodb/lib/cmap/connection.js:305:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Connection.command (/app/node_modules/mongodb/lib/cmap/connection.js:333:26)\n' +
+    '    at async Server.command (/app/node_modules/mongodb/lib/sdam/server.js:171:29)\n' +
+    '    at async FindOperation.execute (/app/node_modules/mongodb/lib/operations/find.js:36:16)\n' +
+    '    at async tryOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:207:20)\n' +
+    '    at async executeOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:75:16)\n' +
+    '    at async FindCursor._initialize (/app/node_modules/mongodb/lib/cursor/find_cursor.js:61:26)\n' +
+    '    at async FindCursor.cursorInit (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:633:27)\n' +
+    '    at async FindCursor.fetchBatch (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:667:13)',
+  url: '/api/auth/register',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 21:58:07'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:21:58:07 +0000] "POST /api/auth/register HTTP/1.1" 500 1099 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:58:07'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:58:19 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:58:19'
+}
+{
+  message: 'SIGTERM signal received, shutting down gracefully',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:58:35'
+}
+{
+  message: '🚀 Server running on port 3000 in development mode',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:58:38'
+}
+{
+  message: '📊 API Documentation: http://localhost:3000/api',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:58:38'
+}
+{
+  message: '💚 Health Check: http://localhost:3000/health',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:58:38'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:58:42 +0000] "GET /health HTTP/1.1" 200 93 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:58:42'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  email: 'test@example.com',
+  error: 'Default pricing plan not configured',
+  stack: 'Error: Default pricing plan not configured\n' +
+    '    at exports.register (/app/src/controllers/authController.js:88:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  level: 'error',
+  message: 'Registration failed:',
+  timestamp: '2025-07-17 21:59:05'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Default pricing plan not configured',
+  stack: 'Error: Default pricing plan not configured\n' +
+    '    at exports.register (/app/src/controllers/authController.js:88:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  url: '/api/auth/register',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 21:59:05'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:21:59:05 +0000] "POST /api/auth/register HTTP/1.1" 500 317 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:59:05'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:59:12 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:59:12'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:21:59:21 +0000] "GET /health HTTP/1.1" 200 94 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:59:21'
+}
+{
+  message: '::1 - - [17/Jul/2025:21:59:42 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 21:59:42'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:00:07 +0000] "GET /api HTTP/1.1" 200 659 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:00:07'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:00:12 +0000] "GET /health HTTP/1.1" 200 93 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:00:12'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:00:17 +0000] "GET /health HTTP/1.1" 200 95 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:00:17'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:00:30 +0000] "GET /api/health/detailed HTTP/1.1" 200 470 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:00:30'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  email: 'test@example.com',
+  error: 'Default pricing plan not configured',
+  stack: 'Error: Default pricing plan not configured\n' +
+    '    at exports.register (/app/src/controllers/authController.js:88:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  level: 'error',
+  message: 'Registration failed:',
+  timestamp: '2025-07-17 22:00:41'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Default pricing plan not configured',
+  stack: 'Error: Default pricing plan not configured\n' +
+    '    at exports.register (/app/src/controllers/authController.js:88:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  url: '/api/auth/register',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 22:00:41'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:00:41 +0000] "POST /api/auth/register HTTP/1.1" 500 317 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:00:41'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:00:42 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:00:42'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:01:12 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:01:12'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'No authentication token provided',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  endpoint: '/api/admin/health',
+  method: 'GET',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:01:25'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:01:25 +0000] "GET /api/admin/health HTTP/1.1" 401 114 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:01:25'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'No authentication token provided',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  endpoint: '/api/admin/health',
+  method: 'GET',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:01:35'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:01:35 +0000] "GET /api/admin/health HTTP/1.1" 401 114 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:01:35'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:01:42 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:01:42'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:02:13 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:02:13'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:02:43 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:02:43'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:03:13 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:03:13'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:03:43 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:03:43'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:04:13 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:04:13'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:04:43 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:04:43'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:05:13 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:05:13'
+}
+{
+  message: 'Connected to MongoDB for seeding',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:05:14'
+}
+{
+  message: 'Updated pricing plan: Free Plan',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:05:14'
+}
+{
+  message: 'Created pricing plan: Basic Plan',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:05:14'
+}
+{
+  message: 'Created pricing plan: Premium Plan',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:05:14'
+}
+{
+  message: 'Created pricing plan: Enterprise Plan',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:05:14'
+}
+{
+  message: 'Created admin user: admin@example.com',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:05:15'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'register',
+  userId: new ObjectId('687973a7d7d5d8e41ea11390'),
+  email: 'test@example.com',
+  success: true,
+  plan: 'free',
+  ipAddress: '::ffff:172.18.0.1',
+  timestamp: '2025-07-17 22:05:28',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:05:28 +0000] "POST /api/auth/register HTTP/1.1" 201 866 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:05:28'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:05:43 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:05:43'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'login',
+  userId: new ObjectId('687973a7d7d5d8e41ea11390'),
+  email: 'test@example.com',
+  success: true,
+  ipAddress: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  timestamp: '2025-07-17 22:05:45',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:05:45 +0000] "POST /api/auth/login HTTP/1.1" 200 1022 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:05:45'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Email verification required',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  endpoint: '/api/auth/refresh',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:05:56'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:05:56 +0000] "POST /api/auth/refresh HTTP/1.1" 401 109 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:05:56'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'login',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  email: 'admin@example.com',
+  success: true,
+  ipAddress: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  timestamp: '2025-07-17 22:06:09',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:06:09 +0000] "POST /api/auth/login HTTP/1.1" 200 1076 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:06:09'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:06:13 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:06:13'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:06:24 +0000] "GET /api/admin/health HTTP/1.1" 200 489 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:06:24'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: "unknown group operator '$quantile'",
+  adminId: new ObjectId('6879739a54c11b515dbcd158'),
+  level: 'error',
+  message: 'Failed to fetch usage stats:',
+  timestamp: '2025-07-17 22:06:34'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: "unknown group operator '$quantile'",
+  stack: "MongoServerError: unknown group operator '$quantile'\n" +
+    '    at Connection.sendCommand (/app/node_modules/mongodb/lib/cmap/connection.js:305:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Connection.command (/app/node_modules/mongodb/lib/cmap/connection.js:333:26)\n' +
+    '    at async Server.command (/app/node_modules/mongodb/lib/sdam/server.js:171:29)\n' +
+    '    at async AggregateOperation.executeCommand (/app/node_modules/mongodb/lib/operations/command.js:76:16)\n' +
+    '    at async AggregateOperation.execute (/app/node_modules/mongodb/lib/operations/aggregate.js:86:16)\n' +
+    '    at async tryOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:207:20)\n' +
+    '    at async executeOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:75:16)\n' +
+    '    at async AggregationCursor._initialize (/app/node_modules/mongodb/lib/cursor/aggregation_cursor.js:56:26)\n' +
+    '    at async AggregationCursor.cursorInit (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:633:27)',
+  url: '/api/admin/usage?days=7',
+  method: 'GET',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 22:06:34'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:06:34 +0000] "GET /api/admin/usage?days=7 HTTP/1.1" 500 1136 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:06:34'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:06:44 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:06:44'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:06:45 +0000] "GET /api/admin/users HTTP/1.1" 200 2432 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:06:45'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:06:59 +0000] "POST /api/summary HTTP/1.1" 400 92 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:06:59'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:07:14 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:07:14'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary',
+  cost: 0.003,
+  success: true,
+  timestamp: '2025-07-17 22:07:15',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:07:15 +0000] "POST /api/summary HTTP/1.1" 200 2297 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:07:15'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:07:27 +0000] "GET /api/summary/history HTTP/1.1" 200 608 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:07:27'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:07:39 +0000] "POST /api/summary/batch HTTP/1.1" 400 196 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:07:39'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:07:44 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:07:44'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:07:49 +0000] "POST /api/summary/batch HTTP/1.1" 400 294 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:07:49'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary',
+  cost: 0.003,
+  success: true,
+  timestamp: '2025-07-17 22:08:08',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:08:08 +0000] "POST /api/summary HTTP/1.1" 200 2097 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:08:08'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:08:14 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:08:14'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary',
+  cost: 0.003,
+  success: true,
+  timestamp: '2025-07-17 22:08:33',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:08:33 +0000] "POST /api/summary HTTP/1.1" 200 2238 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:08:33'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:08:44 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:08:44'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Invalid API key format',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:08:45'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:08:45 +0000] "POST /api/summary HTTP/1.1" 401 104 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:08:45'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Invalid API key format',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:08:55'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:08:55 +0000] "POST /api/summary HTTP/1.1" 401 104 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:08:55'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'No authentication token provided',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:09:04'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:09:04 +0000] "POST /api/summary HTTP/1.1" 401 114 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:09:04'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:09:14 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:09:14'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  title: 'ThisTopicDoesNotExistOnWikipedia12345',
+  error: 'Request failed with status code 404',
+  level: 'error',
+  message: 'Wikipedia API error:',
+  timestamp: '2025-07-17 22:09:17'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  title: 'ThisTopicDoesNotExistOnWikipedia12345',
+  error: 'Failed to fetch Wikipedia content',
+  level: 'error',
+  message: 'Wikipedia summary generation failed:',
+  timestamp: '2025-07-17 22:09:17'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  error: 'Failed to fetch Wikipedia content',
+  stack: 'ExternalServiceError: Failed to fetch Wikipedia content\n' +
+    '    at getWikipediaContent (/app/src/services/wikipediaService.js:40:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getWikipediaSummary (/app/src/services/wikipediaService.js:124:27)\n' +
+    '    at async exports.getSummary (/app/src/controllers/summaryController.js:126:18)',
+  level: 'error',
+  message: 'Summary generation failed:',
+  timestamp: '2025-07-17 22:09:17'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Failed to fetch Wikipedia content',
+  stack: 'ExternalServiceError: Failed to fetch Wikipedia content\n' +
+    '    at getWikipediaContent (/app/src/services/wikipediaService.js:40:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getWikipediaSummary (/app/src/services/wikipediaService.js:124:27)\n' +
+    '    at async exports.getSummary (/app/src/controllers/summaryController.js:126:18)',
+  url: '/api/summary',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 22:09:17'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:09:17 +0000] "POST /api/summary HTTP/1.1" 500 504 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:09:17'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:09:44 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:09:44'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:10:14 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:10:14'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:10:44 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:10:44'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:11:15 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:11:15'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:11:45 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:11:45'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:12:15 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:12:15'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:12:45 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:12:45'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:13:15 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:13:15'
+}
+{
+  message: 'SIGTERM signal received, shutting down gracefully',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:13:39'
+}
+{
+  message: '🚀 Server running on port 3000 in development mode',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:13:41'
+}
+{
+  message: '📊 API Documentation: http://localhost:3000/api',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:13:41'
+}
+{
+  message: '💚 Health Check: http://localhost:3000/health',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:13:41'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:13:45 +0000] "GET /health HTTP/1.1" 200 93 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:13:45'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:14:10 +0000] "GET /api/admin/usage?days=7 HTTP/1.1" 200 893 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:14:10'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:14:15 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:14:15'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:14:21 +0000] "GET /api/admin/usage?days=7 HTTP/1.1" 200 893 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:14:21'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary/batch',
+  cost: 0.006,
+  success: true,
+  timestamp: '2025-07-17 22:14:41',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:14:41 +0000] "POST /api/summary/batch HTTP/1.1" 200 3488 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:14:41'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:14:45 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:14:45'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary/batch',
+  cost: 0.006,
+  success: true,
+  timestamp: '2025-07-17 22:14:59',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:14:59 +0000] "POST /api/summary/batch HTTP/1.1" 200 3877 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:14:59'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:15:15 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:15:15'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary/batch',
+  cost: 0.006,
+  success: true,
+  timestamp: '2025-07-17 22:15:19',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:15:19 +0000] "POST /api/summary/batch HTTP/1.1" 200 3973 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:15:19'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary/batch',
+  cost: 0.006,
+  success: true,
+  timestamp: '2025-07-17 22:15:35',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:15:35 +0000] "POST /api/summary/batch HTTP/1.1" 200 4187 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:15:35'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:15:45 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:15:45'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:16:15 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:16:15'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:16:20 +0000] "GET /health HTTP/1.1" 200 95 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:16:20'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:16:45 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:16:45'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:17:15 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:17:15'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:17:46 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:17:46'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:18:16 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:18:16'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'No authentication token provided',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:18:42'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:18:42 +0000] "POST /api/summary HTTP/1.1" 401 114 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:18:42'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:18:46 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:18:46'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'No authentication token provided',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:18:52'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:18:52 +0000] "POST /api/summary HTTP/1.1" 401 114 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:18:52'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'No authentication token provided',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:19:03'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:19:03 +0000] "POST /api/summary HTTP/1.1" 401 114 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:19:03'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:19:16 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:19:16'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:19:17 +0000] "GET /api/summary?topic=Docker&apiKey= HTTP/1.1" 404 887 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:19:17'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:19:46 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:19:46'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:20:16 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:20:16'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:20:24 +0000] "POST /api/auth/register HTTP/1.1" 400 292 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:20:24'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:20:32 +0000] "POST /api/auth/register HTTP/1.1" 409 68 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:20:32'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:20:46 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:20:46'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'login',
+  userId: new ObjectId('687973a7d7d5d8e41ea11390'),
+  email: 'test@example.com',
+  success: false,
+  reason: 'invalid_password',
+  timestamp: '2025-07-17 22:20:47',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  email: 'test@example.com',
+  error: 'Invalid email or password',
+  level: 'error',
+  message: 'Login failed:',
+  timestamp: '2025-07-17 22:20:47'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Invalid email or password',
+  stack: 'AuthenticationError: Invalid email or password\n' +
+    '    at exports.login (/app/src/controllers/authController.js:203:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  url: '/api/auth/login',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 22:20:47'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:20:47 +0000] "POST /api/auth/login HTTP/1.1" 500 316 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:20:47'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'login',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  email: 'admin@example.com',
+  success: true,
+  ipAddress: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  timestamp: '2025-07-17 22:20:56',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:20:56 +0000] "POST /api/auth/login HTTP/1.1" 200 1116 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:20:56'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:21:06 +0000] "POST /api/summary HTTP/1.1" 400 92 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:21:06'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:21:16 +0000] "POST /api/summary HTTP/1.1" 400 92 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:21:16'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:21:16 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:21:16'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:21:46 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:21:46'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:22:10 +0000] "POST /api/summary HTTP/1.1" 400 92 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:22:10'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:22:16 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:22:16'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:22:23 +0000] "GET /api/admin/stats HTTP/1.1" 404 853 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:22:23'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:22:34 +0000] "GET /admin/stats HTTP/1.1" 404 150 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:22:34'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:22:47 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:22:47'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:23:17 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:23:17'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:23:47 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:23:47'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:24:17 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:24:17'
+}
+{
+  message: 'SIGTERM signal received, shutting down gracefully',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:24:44'
+}
+{
+  message: '🚀 Server running on port 3000 in development mode',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:24:45'
+}
+{
+  message: '📊 API Documentation: http://localhost:3000/api',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:24:45'
+}
+{
+  message: '💚 Health Check: http://localhost:3000/health',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:24:45'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:24:50 +0000] "GET /health HTTP/1.1" 200 92 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:24:50'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:25:20 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:25:20'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:25:23 +0000] "GET /health HTTP/1.1" 200 93 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:25:23'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:25:47 +0000] "POST /api/summary HTTP/1.1" 400 239 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:25:47'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:25:50 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:25:50'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:25:59 +0000] "POST /api/summary HTTP/1.1" 400 92 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:25:59'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:26:20 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:26:20'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary',
+  cost: 0.003,
+  success: true,
+  timestamp: '2025-07-17 22:26:23',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:26:23 +0000] "POST /api/summary HTTP/1.1" 200 838 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:26:23'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary',
+  cost: 0.003,
+  success: true,
+  timestamp: '2025-07-17 22:26:38',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:26:38 +0000] "POST /api/summary HTTP/1.1" 200 2053 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:26:38'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:26:50 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:26:50'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary',
+  cost: 0.003,
+  success: true,
+  timestamp: '2025-07-17 22:26:51',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:26:51 +0000] "POST /api/summary HTTP/1.1" 200 2104 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:26:51'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary',
+  cost: 0.003,
+  success: true,
+  timestamp: '2025-07-17 22:27:07',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:27:07 +0000] "POST /api/summary HTTP/1.1" 200 2137 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:27:07'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:27:16 +0000] "GET /health HTTP/1.1" 200 95 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:27:16'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:27:20 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:27:20'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary',
+  cost: 0.003,
+  success: true,
+  timestamp: '2025-07-17 22:27:45',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:27:45 +0000] "POST /api/summary HTTP/1.1" 200 2234 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:27:45'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:27:51 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:27:51'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary',
+  cost: 0.003,
+  success: true,
+  timestamp: '2025-07-17 22:28:09',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:28:09 +0000] "POST /api/summary HTTP/1.1" 200 2044 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:28:09'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:28:21 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:28:21'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:28:51 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:28:51'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary/batch',
+  cost: 0.006,
+  success: true,
+  timestamp: '2025-07-17 22:29:00',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:29:00 +0000] "POST /api/summary/batch HTTP/1.1" 200 1763 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:29:00'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  endpoint: '/api/summary/batch',
+  cost: 0.003,
+  success: true,
+  timestamp: '2025-07-17 22:29:15',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:29:15 +0000] "POST /api/summary/batch HTTP/1.1" 200 2262 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:29:15'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:29:21 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:29:21'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:29:51 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:29:51'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:30:21 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:30:21'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:30:51 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:30:51'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:31:21 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:31:21'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:31:51 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:31:51'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:32:22 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:32:22'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:32:52 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:32:52'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:33:22 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:33:22'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:33:45 +0000] "GET /admin/usage HTTP/1.1" 404 150 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:33:45'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:33:52 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:33:52'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:33:58 +0000] "GET /admin/health HTTP/1.1" 404 151 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:33:58'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:34:19 +0000] "GET /api/admin/health HTTP/1.1" 200 580 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:34:19'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:34:22 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:34:22'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:34:32 +0000] "GET /api/admin/usage HTTP/1.1" 200 1214 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:34:32'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:34:45 +0000] "GET /api/admin/usage HTTP/1.1" 200 1214 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:34:45'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:34:52 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:34:52'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:34:58 +0000] "GET /api/admin/users HTTP/1.1" 200 2594 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:34:58'
+}
+{
+  message: '::ffff:172.18.0.1 - - [17/Jul/2025:22:35:13 +0000] "GET /api/admin/earnings HTTP/1.1" 200 576 "-" "curl/8.5.0"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:35:13'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:35:22 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:35:22'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:35:52 +0000] "GET /health HTTP/1.1" 200 93 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:35:52'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:36:23 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:36:23'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:36:53 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:36:53'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:37:23 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:37:23'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:37:53 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:37:53'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:38:23 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:38:23'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'register',
+  userId: new ObjectId('68797b6d068231cba1729a88'),
+  email: 'newuser@example.com',
+  success: true,
+  plan: 'free',
+  ipAddress: '::ffff:127.0.0.1',
+  timestamp: '2025-07-17 22:38:38',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'login',
+  userId: new ObjectId('68797b6d068231cba1729a73'),
+  email: 'test@example.com',
+  success: true,
+  ipAddress: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  timestamp: '2025-07-17 22:38:38',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797b6d068231cba1729a73'),
+  endpoint: '/api/summary',
+  cost: 0,
+  success: true,
+  timestamp: '2025-07-17 22:38:38',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797b6d068231cba1729a73'),
+  endpoint: '/api/summary',
+  cost: 0,
+  success: true,
+  timestamp: '2025-07-17 22:38:38',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797b6d068231cba1729a73'),
+  email: 'test@example.com',
+  plan: 'free',
+  recentCallCount: 2,
+  perMinuteLimit: 2,
+  level: 'warn',
+  message: 'Per-minute rate limit exceeded:',
+  timestamp: '2025-07-17 22:38:38'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797b6d068231cba1729a73'),
+  email: 'test@example.com',
+  plan: 'free',
+  recentCallCount: 2,
+  perMinuteLimit: 2,
+  level: 'warn',
+  message: 'Per-minute rate limit exceeded:',
+  timestamp: '2025-07-17 22:38:38'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797b6d068231cba1729a73'),
+  email: 'test@example.com',
+  plan: 'free',
+  recentCallCount: 2,
+  perMinuteLimit: 2,
+  level: 'warn',
+  message: 'Per-minute rate limit exceeded:',
+  timestamp: '2025-07-17 22:38:38'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Invalid API key format',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:38:38'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'No authentication token provided',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:38:38'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: `Unexpected token 'i', "invalid json" is not valid JSON`,
+  stack: undefined,
+  url: '/api/summary',
+  method: 'POST',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  userId: undefined,
+  level: 'error',
+  message: 'Error occurred:',
+  timestamp: '2025-07-17 22:38:38'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:38:53 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:38:53'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:39:23 +0000] "GET /health HTTP/1.1" 200 94 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:39:23'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:39:53 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:39:53'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:40:24 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:40:24'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'register',
+  userId: new ObjectId('68797bf33b6af008329fc4a4'),
+  email: 'newuser@example.com',
+  success: true,
+  plan: 'free',
+  ipAddress: '::ffff:127.0.0.1',
+  timestamp: '2025-07-17 22:40:51',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'login',
+  userId: new ObjectId('68797bf33b6af008329fc48e'),
+  email: 'test@example.com',
+  success: true,
+  ipAddress: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  timestamp: '2025-07-17 22:40:52',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797bf33b6af008329fc48e'),
+  endpoint: '/api/summary',
+  cost: 0,
+  success: true,
+  timestamp: '2025-07-17 22:40:52',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797bf33b6af008329fc48e'),
+  endpoint: '/api/summary',
+  cost: 0,
+  success: true,
+  timestamp: '2025-07-17 22:40:52',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797bf33b6af008329fc48e'),
+  email: 'test@example.com',
+  plan: 'free',
+  recentCallCount: 2,
+  perMinuteLimit: 2,
+  level: 'warn',
+  message: 'Per-minute rate limit exceeded:',
+  timestamp: '2025-07-17 22:40:52'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797bf33b6af008329fc48e'),
+  email: 'test@example.com',
+  plan: 'free',
+  recentCallCount: 2,
+  perMinuteLimit: 2,
+  level: 'warn',
+  message: 'Per-minute rate limit exceeded:',
+  timestamp: '2025-07-17 22:40:52'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797bf33b6af008329fc48e'),
+  email: 'test@example.com',
+  plan: 'free',
+  recentCallCount: 2,
+  perMinuteLimit: 2,
+  level: 'warn',
+  message: 'Per-minute rate limit exceeded:',
+  timestamp: '2025-07-17 22:40:52'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Invalid API key format',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:40:52'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'No authentication token provided',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:40:52'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: `Unexpected token 'i', "invalid json" is not valid JSON`,
+  stack: undefined,
+  url: '/api/summary',
+  method: 'POST',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  userId: undefined,
+  level: 'error',
+  message: 'Error occurred:',
+  timestamp: '2025-07-17 22:40:52'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:40:54 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:40:54'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'register',
+  userId: new ObjectId('68797bfdabe9e9226d4db9b7'),
+  email: 'newuser@example.com',
+  success: true,
+  plan: 'free',
+  ipAddress: '::ffff:127.0.0.1',
+  timestamp: '2025-07-17 22:41:01',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'login',
+  userId: new ObjectId('68797bfcabe9e9226d4db9a5'),
+  email: 'test@example.com',
+  success: true,
+  ipAddress: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  timestamp: '2025-07-17 22:41:02',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797bfcabe9e9226d4db9a5'),
+  endpoint: '/api/summary',
+  cost: 0,
+  success: true,
+  timestamp: '2025-07-17 22:41:02',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797bfcabe9e9226d4db9a5'),
+  endpoint: '/api/summary',
+  cost: 0,
+  success: true,
+  timestamp: '2025-07-17 22:41:02',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797bfcabe9e9226d4db9a5'),
+  email: 'test@example.com',
+  plan: 'free',
+  recentCallCount: 2,
+  perMinuteLimit: 2,
+  level: 'warn',
+  message: 'Per-minute rate limit exceeded:',
+  timestamp: '2025-07-17 22:41:02'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797bfcabe9e9226d4db9a5'),
+  email: 'test@example.com',
+  plan: 'free',
+  recentCallCount: 2,
+  perMinuteLimit: 2,
+  level: 'warn',
+  message: 'Per-minute rate limit exceeded:',
+  timestamp: '2025-07-17 22:41:02'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797bfcabe9e9226d4db9a5'),
+  email: 'test@example.com',
+  plan: 'free',
+  recentCallCount: 2,
+  perMinuteLimit: 2,
+  level: 'warn',
+  message: 'Per-minute rate limit exceeded:',
+  timestamp: '2025-07-17 22:41:02'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Invalid API key format',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:41:02'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'No authentication token provided',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:41:02'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: `Unexpected token 'i', "invalid json" is not valid JSON`,
+  stack: undefined,
+  url: '/api/summary',
+  method: 'POST',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  userId: undefined,
+  level: 'error',
+  message: 'Error occurred:',
+  timestamp: '2025-07-17 22:41:02'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:41:24 +0000] "GET /health HTTP/1.1" 200 95 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:41:24'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'register',
+  userId: new ObjectId('68797c1e405e325f3c41ed45'),
+  email: 'newuser@example.com',
+  success: true,
+  plan: 'free',
+  ipAddress: '::ffff:127.0.0.1',
+  timestamp: '2025-07-17 22:41:34',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  event: 'login',
+  userId: new ObjectId('68797c1e405e325f3c41ed4c'),
+  email: 'test@example.com',
+  success: true,
+  ipAddress: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  timestamp: '2025-07-17 22:41:35',
+  level: 'info',
+  message: 'Authentication Event'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797c1f405e325f3c41ed61'),
+  endpoint: '/api/summary',
+  cost: 0,
+  success: true,
+  timestamp: '2025-07-17 22:41:35',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797c20405e325f3c41ed73'),
+  endpoint: '/api/summary',
+  cost: 0,
+  success: true,
+  timestamp: '2025-07-17 22:41:36',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797c20405e325f3c41ed85'),
+  endpoint: '/api/summary',
+  cost: 0,
+  success: true,
+  timestamp: '2025-07-17 22:41:36',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797c20405e325f3c41ed85'),
+  endpoint: '/api/summary',
+  cost: 0,
+  success: true,
+  timestamp: '2025-07-17 22:41:36',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797c20405e325f3c41ed85'),
+  email: 'test@example.com',
+  plan: 'free',
+  recentCallCount: 2,
+  perMinuteLimit: 2,
+  level: 'warn',
+  message: 'Per-minute rate limit exceeded:',
+  timestamp: '2025-07-17 22:41:37'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('68797c21405e325f3c41edb3'),
+  endpoint: '/api/summary',
+  cost: 0,
+  success: true,
+  timestamp: '2025-07-17 22:41:37',
+  level: 'info',
+  message: 'API Call'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Invalid API key format',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:41:38'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'No authentication token provided',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  endpoint: '/api/summary',
+  method: 'POST',
+  level: 'warn',
+  message: 'Authentication failed:',
+  timestamp: '2025-07-17 22:41:38'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: `Unexpected token 'i', "invalid json" is not valid JSON`,
+  stack: undefined,
+  url: '/api/summary',
+  method: 'POST',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  userId: undefined,
+  level: 'error',
+  message: 'Error occurred:',
+  timestamp: '2025-07-17 22:41:38'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:41:54 +0000] "GET /health HTTP/1.1" 200 96 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:41:54'
+}
+{
+  message: '::1 - - [17/Jul/2025:22:42:24 +0000] "GET /health HTTP/1.1" 200 96 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:42:24'
+}

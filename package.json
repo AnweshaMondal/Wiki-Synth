@@ -22,7 +22,15 @@
     "docker:run": "docker run -p 3000:3000 --env-file .env wikipedia-summary-api",
     "production": "NODE_ENV=production npm start"
   },
-  "keywords": ["AI", "API", "Wikipedia", "Summary", "OpenAI", "GitHub AI", "Monetization"],
+  "keywords": [
+    "AI",
+    "API",
+    "Wikipedia",
+    "Summary",
+    "OpenAI",
+    "GitHub AI",
+    "Monetization"
+  ],
   "author": "Anwesha Mondal",
   "license": "MIT",
   "dependencies": {
@@ -50,6 +58,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.1.4",
     "nodemon": "^3.1.2",
     "supertest": "^6.3.3"
   },

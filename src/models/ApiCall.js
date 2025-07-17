@@ -289,7 +289,9 @@ apiCallSchema.statics.getEndpointPerformance = async function(days = 30) {
           $avg: { $cond: [{ $eq: ['$responseStatus', 'success'] }, 1, 0] }
         },
         avgResponseTime: { $avg: '$responseTime' },
-        p95ResponseTime: { $quantile: { input: '$responseTime', quantile: [0.95], method: 'approximate' } },
+        // Use max as approximation for p95 - more compatible across MongoDB versions
+        maxResponseTime: { $max: '$responseTime' },
+        minResponseTime: { $min: '$responseTime' },
         totalCost: { $sum: '$cost' },
         avgCostPerCall: { $avg: '$cost' }
       }

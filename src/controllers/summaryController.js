@@ -196,9 +196,34 @@ exports.getBatchSummaries = [
     .withMessage('Items must be an array with 1-10 elements'),
   
   body('items.*')
-    .isString()
-    .isLength({ min: 1, max: 10000 })
-    .withMessage('Each item must be a string between 1 and 10,000 characters'),
+    .custom((value, { req }) => {
+      // Accept either string or object format
+      if (typeof value === 'string') {
+        if (value.length < 1 || value.length > 10000) {
+          throw new Error('Each string item must be between 1 and 10,000 characters');
+        }
+        return true;
+      }
+      
+      if (typeof value === 'object' && value !== null) {
+        // Check if it has either title or content
+        if (!value.title && !value.content) {
+          throw new Error('Each object item must have either "title" or "content" property');
+        }
+        
+        if (value.title && (typeof value.title !== 'string' || value.title.length < 1 || value.title.length > 200)) {
+          throw new Error('Title must be between 1 and 200 characters');
+        }
+        
+        if (value.content && (typeof value.content !== 'string' || value.content.length < 50 || value.content.length > 50000)) {
+          throw new Error('Content must be between 50 and 50,000 characters');
+        }
+        
+        return true;
+      }
+      
+      throw new Error('Each item must be either a string or an object with title/content property');
+    }),
 
   ...summaryValidation.filter(rule => !rule.builder.fields.includes('title') && !rule.builder.fields.includes('content')),
 
@@ -268,7 +293,18 @@ exports.getBatchSummaries = [
         ...options
       };
 
-      const results = await generateBatchSummaries(items, summaryOptions);
+      // Transform items to the format expected by generateBatchSummaries
+      const processedItems = items.map(item => {
+        if (typeof item === 'string') {
+          return item; // Already in correct format
+        } else if (typeof item === 'object') {
+          // Convert object to string - prioritize title for Wikipedia, content for custom
+          return item.title || item.content;
+        }
+        return item;
+      });
+
+      const results = await generateBatchSummaries(processedItems, summaryOptions);
 
       const responseTime = Date.now() - startTime;
       const responseSize = Buffer.byteLength(JSON.stringify(results), 'utf8');

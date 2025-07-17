@@ -1,0 +1,20 @@
+# Docker Compose Override for Development
+# This file provides development-specific configurations
+
+services:
+  api:
+    volumes:
+      # Mount source code for hot reloading (if using nodemon)
+      - ./src:/app/src:ro
+      - ./package.json:/app/package.json:ro
+      - ./logs:/app/logs
+    environment:
+      # Additional development environment variables
+      - DEBUG=*
+      - LOG_LEVEL=debug
+    # Uncomment to enable development dependencies and hot reload
+    # command: npm run dev
+
+  # Enable mongo-express for database management in development
+  mongo-express:
+    profiles: []  # Remove profiles to always run in development

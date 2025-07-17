@@ -5,8 +5,8 @@ const { ExternalServiceError } = require('../utils/errorFormatter');
 
 // GitHub AI configuration
 const token = process.env.GITHUB_TOKEN;
-const endpoint = "https://models.github.ai/inference";
-const modelName = "openai/gpt-4o";
+const endpoint = process.env.GITHUB_AI_ENDPOINT || "https://models.inference.ai.azure.com";
+const modelName = process.env.GITHUB_AI_MODEL || "gpt-4o";
 
 // Initialize OpenAI client
 const client = new OpenAI({ 

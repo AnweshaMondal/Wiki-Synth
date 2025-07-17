@@ -1,0 +1,301 @@
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  email: 'test@example.com',
+  error: 'Command find requires authentication',
+  stack: 'MongoServerError: Command find requires authentication\n' +
+    '    at Connection.sendCommand (/app/node_modules/mongodb/lib/cmap/connection.js:305:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Connection.command (/app/node_modules/mongodb/lib/cmap/connection.js:333:26)\n' +
+    '    at async Server.command (/app/node_modules/mongodb/lib/sdam/server.js:171:29)\n' +
+    '    at async FindOperation.execute (/app/node_modules/mongodb/lib/operations/find.js:36:16)\n' +
+    '    at async tryOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:207:20)\n' +
+    '    at async executeOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:75:16)\n' +
+    '    at async FindCursor._initialize (/app/node_modules/mongodb/lib/cursor/find_cursor.js:61:26)\n' +
+    '    at async FindCursor.cursorInit (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:633:27)\n' +
+    '    at async FindCursor.fetchBatch (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:667:13)',
+  level: 'error',
+  message: 'Registration failed:',
+  timestamp: '2025-07-17 21:57:10'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Command find requires authentication',
+  stack: 'MongoServerError: Command find requires authentication\n' +
+    '    at Connection.sendCommand (/app/node_modules/mongodb/lib/cmap/connection.js:305:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Connection.command (/app/node_modules/mongodb/lib/cmap/connection.js:333:26)\n' +
+    '    at async Server.command (/app/node_modules/mongodb/lib/sdam/server.js:171:29)\n' +
+    '    at async FindOperation.execute (/app/node_modules/mongodb/lib/operations/find.js:36:16)\n' +
+    '    at async tryOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:207:20)\n' +
+    '    at async executeOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:75:16)\n' +
+    '    at async FindCursor._initialize (/app/node_modules/mongodb/lib/cursor/find_cursor.js:61:26)\n' +
+    '    at async FindCursor.cursorInit (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:633:27)\n' +
+    '    at async FindCursor.fetchBatch (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:667:13)',
+  url: '/api/auth/register',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 21:57:10'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  email: 'test@example.com',
+  error: 'Command find requires authentication',
+  stack: 'MongoServerError: Command find requires authentication\n' +
+    '    at Connection.sendCommand (/app/node_modules/mongodb/lib/cmap/connection.js:305:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Connection.command (/app/node_modules/mongodb/lib/cmap/connection.js:333:26)\n' +
+    '    at async Server.command (/app/node_modules/mongodb/lib/sdam/server.js:171:29)\n' +
+    '    at async FindOperation.execute (/app/node_modules/mongodb/lib/operations/find.js:36:16)\n' +
+    '    at async tryOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:207:20)\n' +
+    '    at async executeOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:75:16)\n' +
+    '    at async FindCursor._initialize (/app/node_modules/mongodb/lib/cursor/find_cursor.js:61:26)\n' +
+    '    at async FindCursor.cursorInit (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:633:27)\n' +
+    '    at async FindCursor.fetchBatch (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:667:13)',
+  level: 'error',
+  message: 'Registration failed:',
+  timestamp: '2025-07-17 21:58:07'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Command find requires authentication',
+  stack: 'MongoServerError: Command find requires authentication\n' +
+    '    at Connection.sendCommand (/app/node_modules/mongodb/lib/cmap/connection.js:305:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Connection.command (/app/node_modules/mongodb/lib/cmap/connection.js:333:26)\n' +
+    '    at async Server.command (/app/node_modules/mongodb/lib/sdam/server.js:171:29)\n' +
+    '    at async FindOperation.execute (/app/node_modules/mongodb/lib/operations/find.js:36:16)\n' +
+    '    at async tryOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:207:20)\n' +
+    '    at async executeOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:75:16)\n' +
+    '    at async FindCursor._initialize (/app/node_modules/mongodb/lib/cursor/find_cursor.js:61:26)\n' +
+    '    at async FindCursor.cursorInit (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:633:27)\n' +
+    '    at async FindCursor.fetchBatch (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:667:13)',
+  url: '/api/auth/register',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 21:58:07'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  email: 'test@example.com',
+  error: 'Default pricing plan not configured',
+  stack: 'Error: Default pricing plan not configured\n' +
+    '    at exports.register (/app/src/controllers/authController.js:88:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  level: 'error',
+  message: 'Registration failed:',
+  timestamp: '2025-07-17 21:59:05'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Default pricing plan not configured',
+  stack: 'Error: Default pricing plan not configured\n' +
+    '    at exports.register (/app/src/controllers/authController.js:88:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  url: '/api/auth/register',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 21:59:05'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  email: 'test@example.com',
+  error: 'Default pricing plan not configured',
+  stack: 'Error: Default pricing plan not configured\n' +
+    '    at exports.register (/app/src/controllers/authController.js:88:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  level: 'error',
+  message: 'Registration failed:',
+  timestamp: '2025-07-17 22:00:41'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Default pricing plan not configured',
+  stack: 'Error: Default pricing plan not configured\n' +
+    '    at exports.register (/app/src/controllers/authController.js:88:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  url: '/api/auth/register',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 22:00:41'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: "unknown group operator '$quantile'",
+  adminId: new ObjectId('6879739a54c11b515dbcd158'),
+  level: 'error',
+  message: 'Failed to fetch usage stats:',
+  timestamp: '2025-07-17 22:06:34'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: "unknown group operator '$quantile'",
+  stack: "MongoServerError: unknown group operator '$quantile'\n" +
+    '    at Connection.sendCommand (/app/node_modules/mongodb/lib/cmap/connection.js:305:27)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async Connection.command (/app/node_modules/mongodb/lib/cmap/connection.js:333:26)\n' +
+    '    at async Server.command (/app/node_modules/mongodb/lib/sdam/server.js:171:29)\n' +
+    '    at async AggregateOperation.executeCommand (/app/node_modules/mongodb/lib/operations/command.js:76:16)\n' +
+    '    at async AggregateOperation.execute (/app/node_modules/mongodb/lib/operations/aggregate.js:86:16)\n' +
+    '    at async tryOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:207:20)\n' +
+    '    at async executeOperation (/app/node_modules/mongodb/lib/operations/execute_operation.js:75:16)\n' +
+    '    at async AggregationCursor._initialize (/app/node_modules/mongodb/lib/cursor/aggregation_cursor.js:56:26)\n' +
+    '    at async AggregationCursor.cursorInit (/app/node_modules/mongodb/lib/cursor/abstract_cursor.js:633:27)',
+  url: '/api/admin/usage?days=7',
+  method: 'GET',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 22:06:34'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  title: 'ThisTopicDoesNotExistOnWikipedia12345',
+  error: 'Request failed with status code 404',
+  level: 'error',
+  message: 'Wikipedia API error:',
+  timestamp: '2025-07-17 22:09:17'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  title: 'ThisTopicDoesNotExistOnWikipedia12345',
+  error: 'Failed to fetch Wikipedia content',
+  level: 'error',
+  message: 'Wikipedia summary generation failed:',
+  timestamp: '2025-07-17 22:09:17'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  userId: new ObjectId('6879739a54c11b515dbcd158'),
+  error: 'Failed to fetch Wikipedia content',
+  stack: 'ExternalServiceError: Failed to fetch Wikipedia content\n' +
+    '    at getWikipediaContent (/app/src/services/wikipediaService.js:40:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getWikipediaSummary (/app/src/services/wikipediaService.js:124:27)\n' +
+    '    at async exports.getSummary (/app/src/controllers/summaryController.js:126:18)',
+  level: 'error',
+  message: 'Summary generation failed:',
+  timestamp: '2025-07-17 22:09:17'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Failed to fetch Wikipedia content',
+  stack: 'ExternalServiceError: Failed to fetch Wikipedia content\n' +
+    '    at getWikipediaContent (/app/src/services/wikipediaService.js:40:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getWikipediaSummary (/app/src/services/wikipediaService.js:124:27)\n' +
+    '    at async exports.getSummary (/app/src/controllers/summaryController.js:126:18)',
+  url: '/api/summary',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 22:09:17'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  email: 'test@example.com',
+  error: 'Invalid email or password',
+  level: 'error',
+  message: 'Login failed:',
+  timestamp: '2025-07-17 22:20:47'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: 'Invalid email or password',
+  stack: 'AuthenticationError: Invalid email or password\n' +
+    '    at exports.login (/app/src/controllers/authController.js:203:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  url: '/api/auth/login',
+  method: 'POST',
+  ip: '::ffff:172.18.0.1',
+  userAgent: 'curl/8.5.0',
+  level: 'error',
+  message: 'Unhandled error:',
+  timestamp: '2025-07-17 22:20:47'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: `Unexpected token 'i', "invalid json" is not valid JSON`,
+  stack: undefined,
+  url: '/api/summary',
+  method: 'POST',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  userId: undefined,
+  level: 'error',
+  message: 'Error occurred:',
+  timestamp: '2025-07-17 22:38:38'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: `Unexpected token 'i', "invalid json" is not valid JSON`,
+  stack: undefined,
+  url: '/api/summary',
+  method: 'POST',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  userId: undefined,
+  level: 'error',
+  message: 'Error occurred:',
+  timestamp: '2025-07-17 22:40:52'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: `Unexpected token 'i', "invalid json" is not valid JSON`,
+  stack: undefined,
+  url: '/api/summary',
+  method: 'POST',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  userId: undefined,
+  level: 'error',
+  message: 'Error occurred:',
+  timestamp: '2025-07-17 22:41:02'
+}
+{
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  error: `Unexpected token 'i', "invalid json" is not valid JSON`,
+  stack: undefined,
+  url: '/api/summary',
+  method: 'POST',
+  ip: '::ffff:127.0.0.1',
+  userAgent: undefined,
+  userId: undefined,
+  level: 'error',
+  message: 'Error occurred:',
+  timestamp: '2025-07-17 22:41:38'
+}
