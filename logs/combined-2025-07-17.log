@@ -2463,3 +2463,10 @@
   version: '2.0.0',
   timestamp: '2025-07-17 22:42:24'
 }
+{
+  message: '::1 - - [17/Jul/2025:22:42:54 +0000] "GET /health HTTP/1.1" 200 96 "-" "-"',
+  level: 'info',
+  service: 'wikipedia-summary-api',
+  version: '2.0.0',
+  timestamp: '2025-07-17 22:42:54'
+}
