@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Summarizer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="icons/icon32.png" alt="Wikipedia Summarizer">
+                <h1>Wiki Summarizer</h1>
+            </div>
+            <div class="status" id="connectionStatus">
+                <span class="status-dot"></span>
+                <span class="status-text">Connected</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="input-group">
+                    <label for="wikipediaInput">Wikipedia Article</label>
+                    <input 
+                        type="text" 
+                        id="wikipediaInput" 
+                        placeholder="Enter Wikipedia title or paste URL..."
+                        autocomplete="off"
+                    >
+                    <button id="detectBtn" class="detect-btn" title="Auto-detect current page">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L13.09 8.26L19 7L17.74 13.26L22 12L15.74 17.74L17 24L10.74 19.26L12 22L6.26 17.74L7 24L2 12L8.26 13.74L7 7L13.26 8.26L12 2Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Options Section -->
+            <section class="options-section">
+                <div class="option-group">
+                    <label for="summaryStyle">Summary Style</label>
+                    <select id="summaryStyle">
+                        <option value="wikipedia">Wikipedia Style</option>
+                        <option value="academic">Academic</option>
+                        <option value="casual">Casual</option>
+                        <option value="technical">Technical</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <label for="summaryLength">Length</label>
+                    <select id="summaryLength">
+                        <option value="short">Short (1-2 paragraphs)</option>
+                        <option value="medium" selected>Medium (3-4 paragraphs)</option>
+                        <option value="long">Long (5-6 paragraphs)</option>
+                        <option value="detailed">Detailed (Full summary)</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Action Buttons -->
+            <section class="actions">
+                <button id="summarizeBtn" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Summarize Article
+                </button>
+                
+                <div class="quick-actions">
+                    <button id="quickSummary" class="btn btn-secondary">Quick Summary</button>
+                    <button id="settingsBtn" class="btn btn-secondary">Settings</button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="result-header">
+                    <h3>Summary</h3>
+                    <div class="result-actions">
+                        <button id="copyBtn" class="icon-btn" title="Copy to clipboard">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V7.242a2 2 0 00-.602-1.43L16.83 2.83A2 2 0 0015.415 2H10a2 2 0 00-2 2z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 18v2a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h2" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        <button id="saveBtn" class="icon-btn" title="Save summary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="17,21 17,13 7,13 7,21" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="7,3 7,8 15,8" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="summary-content" id="summaryContent">
+                    <!-- Summary will be displayed here -->
+                </div>
+                <div class="summary-stats" id="summaryStats">
+                    <!-- Stats like processing time, tokens used, etc. -->
+                </div>
+            </section>
+
+            <!-- Loading State -->
+            <section class="loading-section" id="loadingSection" style="display: none;">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Generating your summary...</p>
+                </div>
+                <div class="loading-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressText">Analyzing article...</span>
+                </div>
+            </section>
+
+            <!-- Error State -->
+            <section class="error-section" id="errorSection" style="display: none;">
+                <div class="error-content">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" class="error-icon">
+                        <circle cx="12" cy="12" r="10" stroke="#ef4444" stroke-width="2"/>
+                        <line x1="15" y1="9" x2="9" y2="15" stroke="#ef4444" stroke-width="2"/>
+                        <line x1="9" y1="9" x2="15" y2="15" stroke="#ef4444" stroke-width="2"/>
+                    </svg>
+                    <h3>Summary Failed</h3>
+                    <p id="errorMessage">Something went wrong. Please try again.</p>
+                    <button id="retryBtn" class="btn btn-primary">Try Again</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="usage-info">
+                <span class="usage-count">API Calls: <span id="apiCallsCount">0</span>/100</span>
+                <span class="usage-reset">Resets in <span id="resetTime">23h 45m</span></span>
+            </div>
+            <div class="footer-links">
+                <a href="#" id="historyLink">History</a>
+                <a href="#" id="helpLink">Help</a>
+                <a href="#" id="upgradeLink">Upgrade</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

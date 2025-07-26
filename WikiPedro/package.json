@@ -1,0 +1,33 @@
+{
+  "name": "wikipedia-summarizer-chrome-extension",
+  "version": "1.0.0",
+  "description": "A powerful Chrome browser extension for AI-powered Wikipedia article summarization",
+  "scripts": {
+    "build": "echo 'Building Chrome extension...' && npm run lint",
+    "lint": "echo 'Linting code...'",
+    "test": "echo 'Running tests...'",
+    "package": "npm run build && zip -r wikipedia-summarizer-v1.0.0.zip . -x '*.git*' 'node_modules/*' 'package*.json' '.gitignore'",
+    "dev": "echo 'Development mode: Load as unpacked extension in chrome://extensions/'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "wikipedia",
+    "summarizer",
+    "ai",
+    "productivity",
+    "reading",
+    "browser-extension"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/wikipedia-summarizer-extension"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/wikipedia-summarizer-extension/issues"
+  },
+  "homepage": "https://github.com/yourusername/wikipedia-summarizer-extension#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}
